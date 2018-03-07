@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ${APP_HOME}
+gosu ${APP_USER}:${APP_GROUP} semaphore ${SEMAPHORE_OPTIONS}
