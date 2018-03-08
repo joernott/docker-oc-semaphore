@@ -8,8 +8,7 @@ ENV APP_USER=semaphore \
     APP_HOME=/semaphore \
     SEMAPHORE_OPTIONS="" \
     GIT_COMMIT=x \
-    SEMAPHORE_COMMIT=x \
-    IMAGE_HISTORY=""
+    IMAGE_HISTORY=" « jenkins-docker-oc-base-29 « centos/7 declare -x OLDPWD declare -x PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin declare -x PWD=/ declare -x SHLVL=1"
 
 COPY src /
 
