@@ -8,7 +8,7 @@ patch_dockerfile
 if [ ! -d ${PWD}/src/semaphore ]; then
     mkdir -p ${PWD}/src/semaphore
 fi
-docker run -e  SEMAPHORE_BRANCH=feature/both_vaults \
+docker run -e  SEMAPHORE_BRANCH=${SEMAPHORE_BRANCH} \
            -e OUTPUT_USER=${USER} \
            -e OUTPUT_GROUP=users \
            -v ${PWD}/src/semaphore:/output \
