@@ -13,6 +13,7 @@ ENV APP_USER=semaphore \
 COPY src /
 
 RUN /tmp/install/oc-semaphore.sh
+ENTRYPOINT /entrypoint
 
 EXPOSE 3000
 
