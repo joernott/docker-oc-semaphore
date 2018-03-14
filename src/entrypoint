@@ -1,3 +1,4 @@
 #!/bin/bash
 cd ${APP_HOME}
-gosu ${APP_USER}:${APP_GROUP} /semaphore/semaphore -c /semaphore/config.json ${SEMAPHORE_OPTIONS}
+chown ${APP_USER}:${APP_GROUP} /semaphore/config.json
+gosu ${APP_USER}:${APP_GROUP} /semaphore/semaphore -config /semaphore/config.json ${SEMAPHORE_OPTIONS}
